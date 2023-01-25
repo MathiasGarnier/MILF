@@ -11,10 +11,8 @@ remote_theme: fernandopasik/jekyll-theme-material-docs
 
 plugins:
   - jekyll-remote-theme
-
-
-  plugins:
-    - blog
+#  plugins:
+  - blog
 
 markdown_extensions:
   - pymdownx.arithmatex:
