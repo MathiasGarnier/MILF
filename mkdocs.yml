@@ -7,8 +7,8 @@ theme:
   name: material
   language: fr
 
-plugins:
-  - blog
+#plugins:
+#  - blog
 
 markdown_extensions:
   - pymdownx.arithmatex:
