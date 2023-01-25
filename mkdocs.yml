@@ -3,15 +3,11 @@ site_url: https://mathiasgarnier.github.io/MILF/
 site_description: Sur ce petit blog, je vous parle de tout ce que j’apprends dans l’optique de faire un assistant de preuve et des “mathématiques embarquées” !
 site_author: Garnier Mathias
 
-#theme:
-#  name: material
-#  language: fr
-
-remote_theme: fernandopasik/jekyll-theme-material-docs
+theme:
+  name: material
+  language: fr
 
 plugins:
-  - jekyll-remote-theme
-#  plugins:
   - blog
 
 markdown_extensions:
