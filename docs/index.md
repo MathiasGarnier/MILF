@@ -17,7 +17,7 @@ Je pars vraiment de zéro et mon but est de tout expliquer (de fond en comble !)
 
 * [2 - Premier compilateur miniature](blog/2-premier-compilateur-miniature.md)
 
-* [3 - Cori et Lascar (débuts)](blog/3-Cori-Lascar-débuts.md)
+* [3 - Cori et Lascar (débuts)](blog/3-Cori-Lascar-debuts.md)
 
 * [4 - L'entrée au Fab Lab](blog/4-entree-au-fab-lab.md)
 
