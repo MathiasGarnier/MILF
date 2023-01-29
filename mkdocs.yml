@@ -10,14 +10,17 @@ theme:
 #plugins:
 #  - blog
 
+markdown: kramdown
+
 #markdown_extensions:
    # other extensions ...
 #   - pymdownx.arithmatex
-kramdown:
-  syntax_highlighter: rouge
-  input: GFM
-  auto_ids:       true
-  toc_levels:     1..3
+
+#kramdown:
+#  syntax_highlighter: rouge
+#  input: GFM
+#  auto_ids:       true
+#  toc_levels:     1..3
 
 extra_javascript:
   #- javascripts/mathjax.js
