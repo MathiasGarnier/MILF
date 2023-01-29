@@ -1,14 +1,3 @@
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  config: ["MMLorHTML.js"],
-  jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML"],
-  extensions: ["MathMenu.js", "MathZoom.js"]
-});
-</script>
-
-
 # 0 - Objectifs initiaux
 
 Il est relativement compliqué d'avoir une idée (rien qu'un peu) précise de ce que je souhaite faire. Découvrant à peine ce nouveau monde (design de compilateurs, formalisation, programmation (très) bas niveau...), il est difficile de savoir exactement par où commencer et surtout où aller !
