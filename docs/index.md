@@ -21,7 +21,7 @@ Je pars vraiment de zéro et mon but est de tout expliquer (de fond en comble !)
 
 * [4 - L'entrée au Fab Lab](blog/4-entree-au-fab-lab.md)
 
-* [5 - Ben Eater (et cie), ces héros...](5-ben-eater-ce-heros.md)
+* [5 - Ben Eater (et cie), ces héros...](blog/5-ben-eater-ce-heros.md)
 
 
 <br>
