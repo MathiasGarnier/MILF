@@ -14,8 +14,7 @@ theme:
 #  - pymdownx.arithmatex:
 #      generic: true
 
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+mathjax: true
 
 extra_javascript:
   #- javascripts/mathjax.js
