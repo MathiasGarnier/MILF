@@ -10,8 +10,6 @@ theme:
 #plugins:
 #  - blog
 
-markdown: kramdown
-
 #markdown_extensions:
    # other extensions ...
 #   - pymdownx.arithmatex
