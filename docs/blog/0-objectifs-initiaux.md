@@ -23,4 +23,4 @@ Dit autrement, l'idée est de calquer la vérification et la formalisation de pr
 Il faut tenir bon et ne pas baisser les bras. Adoptons la [philosophie Vulkan](https://vulkan-tutorial.com/Introduction) :
 > It's also important to keep in mind that once you have that boring looking triangle, drawing fully textured 3D models does not take that much extra work, and each step beyond that point is much more rewarding.
 
-Au travail !
+Au travail, il ne faut pas se décourager (surtout pas au début) !
