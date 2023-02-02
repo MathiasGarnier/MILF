@@ -16,3 +16,11 @@ Dans quelle direction aller ? Pour tenter de m'expliquer un petit peu, je vais f
 Mon idée serait de baser le langage non sur des instructions au processeurs usuelles mais de "détourner" le fonctionnement habituel d'un ordinateur pour "raisonner" sur des données "symboliques" et non sur des opérations arithmétiques brutes. (Comment définir alors un tel objet ? Est-ce seulement possible ? A-ce seulement un sens ?)
 
 Dit autrement, l'idée est de calquer la vérification et la formalisation de preuve sur l'architecture même d'un processeur (tout en ayant un petit peu _bidouillé_ le "fonctionnement originel").
+
+
+## Ne pas abandonner
+
+Il faut tenir bon et ne pas baisser les bras. Adoptons la [philosophie Vulkan](https://vulkan-tutorial.com/Introduction) :
+> It's also important to keep in mind that once you have that boring looking triangle, drawing fully textured 3D models does not take that much extra work, and each step beyond that point is much more rewarding.
+
+Au travail !
