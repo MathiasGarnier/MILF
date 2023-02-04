@@ -19,13 +19,47 @@ Dit autrement, l'idée est de calquer la vérification et la formalisation de pr
 
 On m'a parlé de VHDL et Verilog (wow). À voir bien plus tard.
 
-## Une idée du travail
+## Une idée du travail (quelques tâches à accomplir)
 
 Je suis théoriquement parti pour... longtemps. Dans l'optique d'un déroulement pas trop chaotique du projet, je suis censé réaliser bon nombres de prototypes (qui, dans leur ordre de réalisation, ne correspondent aucunement à une quelconque priorisation des objectifs).
 
-Pour l'instant (et depuis ma prime adolescence), je me passionne pour le design de compilateur. Il ne m'aura fallu que cinq / six années pour me lancer... [Ben](https://github.com/lngns/) m'a fait découvrir beaucoup de choses et continue à m'en faire découvrir beaucoup. Aujourd'hui, et c'est l'occasion d'un des prochains billets, j'ai mon petit compilateur _source-to-source_ et c'est un heureux début. 
+Pour l'instant (et depuis ma prime adolescence), je me passionne pour le design de compilateur. Il ne m'aura fallu que cinq / six années pour me lancer... [Ben](https://github.com/lngns/) m'a fait découvrir beaucoup de choses et continue à m'en faire découvrir beaucoup. Aujourd'hui, et c'est l'occasion d'un des prochains billets, j'ai mon petit compilateur _source-to-source_ et c'est un heureux début... 
 
 ### Le temps des compilateurs
+
+Honnêtement, c'est la jungle. Ça part dans tous les sens, faire un truc propre est loin d'être trivial.
+
+### Le temps du fonctionnement système
+
+
+### Le temps des performances et cette idée qui m'échappe : l'optimisation
+
+
+### Un niveau en dessous
+
+Au fond, le C est très haut niveau ().
+
+### Le temps des cathédrales
+
+==> l'architecture / électrocinétique et cie
+
+
+### Mastering Lean
+
+
+### Le formalean-inator !
+
+Il va bien falloir que j'apprenne à manier un assistant de preuve un jour ou l'autre ! Ce serait bien de le faire avec un bon petit projet en tête (par exemple celui du second semestre : formaliser "entièrement" la preuve du résultat que l'on devra montrer; n'ayant pas encore le sujet, je ne sais pas vraiment ce qu'il en retourne).
+
+Le choix de Lean est purement subjectif mais divers points renforcent cette décision : une communauté débordante et active (par exemple [sur leur forum](https://leanprover.zulipchat.com/)), une sacrée documentation (sur leurs sites : [microsoft](https://leanprover.github.io/) ou [communautaire](https://leanprover-community.github.io/); ou directement sur [github](https://github.com/leanprover-community)).
+
+Dans un second temps, écrire un micro-lean (un premier assistant de preuve) serait simplement merveilleux.
+
+
+### Beaucoup de mathématiques et d'informatique théorique
+
+En parallèle de chacune de ces étapes, il va falloir se documenter sur les bases mathématiques / informatiques de chacun des objets.
+
 
 ## Ne pas abandonner
 
