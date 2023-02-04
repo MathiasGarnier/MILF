@@ -1,0 +1,646 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Sur ce petit blog, je vous parle de tout ce que j’apprends dans l’optique de faire un assistant de preuve et des “mathématiques embarquées” !">
+      
+      
+        <meta name="author" content="Garnier Mathias">
+      
+      
+        <link rel="canonical" href="https://mathiasgarnier.github.io/MILF/blog/0-objectifs-initiaux/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../1-reinventer-la-roue/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
+    
+    
+      
+        <title>0 - Objectifs initiaux - M.I.L.F.</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#0-objectifs-initiaux" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="M.I.L.F." class="md-header__button md-logo" aria-label="M.I.L.F." data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            M.I.L.F.
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              0 - Objectifs initiaux
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="M.I.L.F." class="md-nav__button md-logo" aria-label="M.I.L.F." data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    M.I.L.F.
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Mathématiques. Informatique. Linguistique. Formalisation.
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Blog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          0 - Objectifs initiaux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        0 - Objectifs initiaux
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#une-premiere-idee" class="md-nav__link">
+    Une première idée
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#une-idee-du-travail-quelques-taches-a-accomplir" class="md-nav__link">
+    Une idée du travail (quelques tâches à accomplir)
+  </a>
+  
+    <nav class="md-nav" aria-label="Une idée du travail (quelques tâches à accomplir)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-temps-des-compilateurs" class="md-nav__link">
+    Le temps des compilateurs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-temps-du-fonctionnement-systeme" class="md-nav__link">
+    Le temps du fonctionnement système
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-temps-des-performances-et-cette-idee-qui-mechappe-loptimisation" class="md-nav__link">
+    Le temps des performances et cette idée qui m'échappe : l'optimisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#un-niveau-en-dessous" class="md-nav__link">
+    Un niveau en dessous
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-temps-des-cathedrales" class="md-nav__link">
+    Le temps des cathédrales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mastering-lean" class="md-nav__link">
+    Mastering Lean
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-formalean-inator" class="md-nav__link">
+    Le formalean-inator !
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaucoup-de-mathematiques-et-dinformatique-theorique" class="md-nav__link">
+    Beaucoup de mathématiques et d'informatique théorique
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ne-pas-abandonner" class="md-nav__link">
+    Ne pas abandonner
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-reinventer-la-roue/" class="md-nav__link">
+        1 - Réinventer la roue
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-premier-compilateur-miniature/" class="md-nav__link">
+        2 - Premier compilateur miniature
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-Cori-Lascar-debuts/" class="md-nav__link">
+        3 - Cori et Lascar (débuts)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-entree-au-fab-lab/" class="md-nav__link">
+        4 - L'entrée au Fab Lab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-ben-eater-ce-heros/" class="md-nav__link">
+        5 - Ben Eater (et cie), ces héros...
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#une-premiere-idee" class="md-nav__link">
+    Une première idée
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#une-idee-du-travail-quelques-taches-a-accomplir" class="md-nav__link">
+    Une idée du travail (quelques tâches à accomplir)
+  </a>
+  
+    <nav class="md-nav" aria-label="Une idée du travail (quelques tâches à accomplir)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-temps-des-compilateurs" class="md-nav__link">
+    Le temps des compilateurs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-temps-du-fonctionnement-systeme" class="md-nav__link">
+    Le temps du fonctionnement système
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-temps-des-performances-et-cette-idee-qui-mechappe-loptimisation" class="md-nav__link">
+    Le temps des performances et cette idée qui m'échappe : l'optimisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#un-niveau-en-dessous" class="md-nav__link">
+    Un niveau en dessous
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-temps-des-cathedrales" class="md-nav__link">
+    Le temps des cathédrales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mastering-lean" class="md-nav__link">
+    Mastering Lean
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-formalean-inator" class="md-nav__link">
+    Le formalean-inator !
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beaucoup-de-mathematiques-et-dinformatique-theorique" class="md-nav__link">
+    Beaucoup de mathématiques et d'informatique théorique
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ne-pas-abandonner" class="md-nav__link">
+    Ne pas abandonner
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="0-objectifs-initiaux">0 - Objectifs initiaux</h1>
+<p>Il est relativement compliqué d'avoir une idée (rien qu'un peu) précise de ce que je souhaite faire. Découvrant à peine ce nouveau monde (design de compilateurs, formalisation, programmation (très) bas niveau...), il est difficile de savoir exactement par où commencer et surtout où aller !</p>
+<p>Pour donner une idée, voici une liste (à la volée) de termes que je vois passer mais dont je n'ai aucune idée du sens qu'ils possèdent / de leur fonctionnement / définition / utilisation précise : Turing-complet, machine de Turing, logique du premier ordre (etc), théorie des types, CPU, RAM, (accélération) GPU, lambda calculus, complexité, preuve, registre, circuit imprimé, sémantique, grammaire...</p>
+<p>Même si le vocabulaire manque, essayons tout de même de décrire ce que je souhaite faire (au moins sommairement dans un premier temps).</p>
+<h2 id="une-premiere-idee">Une première idée</h2>
+<p>Prenons l'exemple de <a href="https://leanprover.github.io/">Lean</a>. C'est un assistant de preuve. Concrètement, il prend en entrée un jeu de données (chaîne de caractère ayant un sens dans un langage précis) qu'il va être capable "d'évaluer" puis de "traiter". Une fois fait, son utilité réside notamment dans le fait de "certifier" de la justesse de la preuve ! (Lean est même incroyablement plus fort que cela en permettant diverses automatisations...)</p>
+<p>Essentiellement, Lean est un langage écrit en C++ (cf. <a href="https://github.com/leanprover-community/lean">github</a>). Comme exemple d'utilisation, un utilisateur programmerait en Lean sur VSCode sur Windows / Linux / McIntosh... Avant que le processeur soit sollicité beaucoup d'intermédiaires vont s'interposer (même si ce sera un temps relativement court). Assez bêtement, je me suis demandé s'il ne serait pas possible d'écrire un langage (au plus proche du processeur) opérant dans une logique similaire à celle de Lean. Néanmoins, ne pourrait-on pas aller plus loin ?</p>
+<p>Dans quelle direction aller ? Pour tenter de m'expliquer un petit peu, je vais faire une <em>explication détournée</em> : semblerait-il que tous les langages assembleurs possèdent une instruction <code>add</code> (et plus généralement celles de l'arithmétique (binaire ou pas) de base). Fondamentalement, si je ne suis pas trop dans l'erreur, dans un assistant de preuve, on ne va <em>jamais</em> "prouver" que <em>"deux et deux font quatre"</em>. En revanche, on va prouver que la manière de faire l'addition implique qu'en raisonnant sur un certain alphabet / langage (définit arbitrairement; les nombres usuels par exemple) conduira à obtenir des équivalences / égalités purement numériques (2 + 2 = 4).
+Mon idée serait de baser le langage non sur des instructions au processeurs usuelles mais de "détourner" le fonctionnement habituel d'un ordinateur pour "raisonner" sur des données "symboliques" et non sur des opérations arithmétiques brutes. (Comment définir alors un tel objet ? Est-ce seulement possible ? A-ce seulement un sens ?)</p>
+<p>Dit autrement, l'idée est de calquer la vérification et la formalisation de preuve sur l'architecture même d'un processeur (tout en ayant un petit peu <em>bidouillé</em> le "fonctionnement originel").</p>
+<p>On m'a parlé de VHDL et Verilog (wow). À voir bien plus tard.</p>
+<h2 id="une-idee-du-travail-quelques-taches-a-accomplir">Une idée du travail (quelques tâches à accomplir)</h2>
+<p>Je suis théoriquement parti pour... longtemps. Dans l'optique d'un déroulement pas trop chaotique du projet, je suis censé réaliser bon nombres de prototypes (qui, dans leur ordre de réalisation, ne correspondent aucunement à une quelconque priorisation des objectifs).</p>
+<p>Pour l'instant (et depuis ma prime adolescence), je me passionne pour le design de compilateur. Il ne m'aura fallu que cinq / six années pour me lancer... <a href="https://github.com/lngns/">Ben</a> m'a fait découvrir beaucoup de choses et continue à m'en faire découvrir beaucoup. Aujourd'hui, et c'est l'occasion d'un des prochains billets, j'ai mon petit compilateur <em>source-to-source</em> et c'est un heureux début... </p>
+<h3 id="le-temps-des-compilateurs">Le temps des compilateurs</h3>
+<p>Honnêtement, c'est la jungle. Ça part dans tous les sens, faire un truc propre est loin d'être trivial.</p>
+<h3 id="le-temps-du-fonctionnement-systeme">Le temps du fonctionnement système</h3>
+<h3 id="le-temps-des-performances-et-cette-idee-qui-mechappe-loptimisation">Le temps des performances et cette idée qui m'échappe : l'optimisation</h3>
+<h3 id="un-niveau-en-dessous">Un niveau en dessous</h3>
+<p>Au fond, le C est très haut niveau ().</p>
+<h3 id="le-temps-des-cathedrales">Le temps des cathédrales</h3>
+<p>==&gt; l'architecture / électrocinétique et cie</p>
+<h3 id="mastering-lean">Mastering Lean</h3>
+<h3 id="le-formalean-inator">Le formalean-inator !</h3>
+<p>Il va bien falloir que j'apprenne à manier un assistant de preuve un jour ou l'autre ! Ce serait bien de le faire avec un bon petit projet en tête (par exemple celui du second semestre : formaliser "entièrement" la preuve du résultat que l'on devra montrer; n'ayant pas encore le sujet, je ne sais pas vraiment ce qu'il en retourne).</p>
+<p>Le choix de Lean est purement subjectif mais divers points renforcent cette décision : une communauté débordante et active (par exemple <a href="https://leanprover.zulipchat.com/">sur leur forum</a>), une sacrée documentation (sur leurs sites : <a href="https://leanprover.github.io/">microsoft</a> ou <a href="https://leanprover-community.github.io/">communautaire</a>; ou directement sur <a href="https://github.com/leanprover-community">github</a>).</p>
+<p>Dans un second temps, écrire un micro-lean (un premier assistant de preuve) serait simplement merveilleux.</p>
+<h3 id="beaucoup-de-mathematiques-et-dinformatique-theorique">Beaucoup de mathématiques et d'informatique théorique</h3>
+<p>En parallèle de chacune de ces étapes, il va falloir se documenter sur les bases mathématiques / informatiques de chacun des objets.</p>
+<h2 id="ne-pas-abandonner">Ne pas abandonner</h2>
+<p>Il faut tenir bon et ne pas baisser les bras. Adoptons la <a href="https://vulkan-tutorial.com/Introduction">philosophie Vulkan</a> :</p>
+<blockquote>
+<p>It's also important to keep in mind that once you have that boring looking triangle, drawing fully textured 3D models does not take that much extra work, and each step beyond that point is much more rewarding.</p>
+</blockquote>
+<p>Au travail, il ne faut pas se décourager (surtout pas au début) !</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+    
+  </body>
+</html>
