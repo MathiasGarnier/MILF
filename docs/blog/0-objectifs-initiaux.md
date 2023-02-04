@@ -17,6 +17,15 @@ Mon idée serait de baser le langage non sur des instructions au processeurs usu
 
 Dit autrement, l'idée est de calquer la vérification et la formalisation de preuve sur l'architecture même d'un processeur (tout en ayant un petit peu _bidouillé_ le "fonctionnement originel").
 
+On m'a parlé de VHDL et Verilog (wow). À voir bien plus tard.
+
+## Une idée du travail
+
+Je suis théoriquement parti pour... longtemps. Dans l'optique d'un déroulement pas trop chaotique du projet, je suis censé réaliser bon nombres de prototypes (qui, dans leur ordre de réalisation, ne correspondent aucunement à une quelconque priorisation des objectifs).
+
+Pour l'instant (et depuis ma prime adolescence), je me passionne pour le design de compilateur. Il ne m'aura fallu que cinq / six années pour me lancer... [Ben](https://github.com/lngns/) m'a fait découvrir beaucoup de choses et continue à m'en faire découvrir beaucoup. Aujourd'hui, et c'est l'occasion d'un des prochains billets, j'ai mon petit compilateur _source-to-source_ et c'est un heureux début. 
+
+### Le temps des compilateurs
 
 ## Ne pas abandonner
 
